@@ -1,1 +1,8 @@
 node_modules/
+# parcel的缓存文件
+.cache/
+
+# 项目的打包目录
+dist/
+
+package-lock.json

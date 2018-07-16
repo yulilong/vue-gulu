@@ -4,6 +4,7 @@
   "description": "这是一个UI框架",
   "main": "index.js",
   "scripts": {
+    "start": "./node_modules/.bin/parcel --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,9 +22,16 @@
   },
   "homepage": "https://github.com/yulilong/vue-gulu#readme",
   "dependencies": {
-    "vue": "^2.5.16"
+    "vue": "^2.5.16",
+    "vue-hot-reload-api": "^2.3.0"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.9.4"
+    "@vue/component-compiler-utils": "^2.1.0",
+    "node-sass": "^4.9.2",
+    "parcel-bundler": "^1.9.4",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "alias": {
+    "vue" : "./node_modules/vue/dist/vue.common.js"
   }
 }
