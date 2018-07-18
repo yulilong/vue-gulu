@@ -11,7 +11,22 @@
 
 <script>
 export default {
-  props: ['icon', 'iconPosition']
+  // props: ['icon', 'iconPosition']
+  props: {
+    icon: {},
+    iconPosition: {
+      type: String,         // 属性类型
+      default: 'left',      // 属性默认值
+      validator (value) {   // 属性检查性
+        return value === 'left' || value === 'right'
+        // if ( value !== 'left' && value !== 'right') {
+        //   return false;
+        // } else {
+        //   return true;
+        // }
+      }
+    }
+  }
 };
 </script>
 
