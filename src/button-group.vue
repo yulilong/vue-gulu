@@ -32,7 +32,9 @@ export default {
         border-bottom-right-radius: var(--border-radius);
       }
       // 解决三个按钮在一起边框在一起，只留下一个
-      margin-left: -1px;
+      &:not(:first-child) {
+        margin-left: -1px;
+      }
       &:hover {
         position: relative;
         z-index: 1;
